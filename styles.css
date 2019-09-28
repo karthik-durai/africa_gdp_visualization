@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  /* zoom: 70%; */
+}
+
+#mapid 
+{ 
+  zoom: 70%;
+  height: 100%;
+  width: 100%;
+}
