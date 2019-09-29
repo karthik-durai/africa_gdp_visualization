@@ -16,3 +16,15 @@ const colorCodes = {
   100: '#aaffc3',
   200: '#3cb44b'
 }
+
+function determineColor(value) {
+  value = Number(value)
+  if (value > 200) return '#3cb44b'
+  const colorCodeKeys = Object.keys(colorCodes)
+  for (let i = 0; i < colorCodeKeys.length; i++) {
+    const code = colorCodeKeys[i]
+    if (value <= code) {
+      return colorCodes[code]
+    }
+  }
+}
